@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - master
-      paths:
-        - 'notebooks/**'
+    paths:
+      - 'notebooks/**'
   workflow_dispatch:
     inputs:
       logLevel:
