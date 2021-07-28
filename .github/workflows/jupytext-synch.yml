@@ -36,4 +36,5 @@ jobs:
     # Synch Jupytext files
     - name: jupytext sync
       run: |
+        jupytext --set-formats .md///md,ipynb notebooks/.md/*
         jupytext --synch notebooks/*
