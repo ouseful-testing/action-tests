@@ -1,4 +1,4 @@
-name: jupytext-syncher
+name: issue-speller
 
 # Only run this when the master branch changes
 on:
