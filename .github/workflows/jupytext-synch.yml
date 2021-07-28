@@ -4,7 +4,7 @@ name: jupytext-syncher
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'notebooks/**'
   workflow_dispatch:
