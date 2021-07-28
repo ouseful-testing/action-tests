@@ -26,7 +26,12 @@ jobs:
       run: |
         sudo apt-get -y install aspell
         pip install git+https://github.com/ouseful-PR/pyspelling.git@th-ipynb git+https://github.com/innovationOUtside/nb_spellchecker.git
+    - name: Spell check
+      run: |
         pyspelling -c ipyspell.yml > typos.txt
+    - name: Dummy
+      run: |
+        echo "hello"
     - uses: JasonEtco/create-an-issue@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
