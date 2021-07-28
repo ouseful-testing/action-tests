@@ -24,6 +24,7 @@ jobs:
 
     - name: Install dependencies
       run: |
+        apt-get -y install aspell
         pip install git+https://github.com/ouseful-PR/pyspelling.git@th-ipynb git+https://github.com/innovationOUtside/nb_spellchecker.git
         pyspelling -c ipyspell.yml > typos.txt
     - uses: JasonEtco/create-an-issue@v2
