@@ -17,14 +17,14 @@ jobs:
     - uses: actions/checkout@v2
 
     # Install dependencies
-    - name: Set up Python 3.7
+    - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
-        python-version: 3.7
+        python-version: 3.8
 
     - name: Install dependencies
       run: |
-        sudo apt-get -y install aspell
+        sudo apt-get -y install aspell aspell aspell-en
         pip install git+https://github.com/ouseful-PR/pyspelling.git@th-ipynb git+https://github.com/innovationOUtside/nb_spellchecker.git
     - name: Spell check
       run: |
